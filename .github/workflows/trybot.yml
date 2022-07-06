@@ -1,0 +1,13 @@
+name: TryBot
+"on":
+  push:
+    branches:
+      - 'trybot/**'
+jobs:
+  start:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - run: 'echo hello world'
